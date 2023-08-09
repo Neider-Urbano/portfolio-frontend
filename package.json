@@ -18,6 +18,7 @@
     "e2e": "cypress open",
     "e2e:run": "cypress run",
     "precommit": "concurrently --raw \"tsc\" && lint-staged",
+    "prepush": "lint-staged",
     "format": "prettier --write .",
     "checks": "prettier --check .",
     "prepare": "husky install"
