@@ -1,0 +1,48 @@
+name: Checks
+
+on:
+  push:
+    branches: ["main", "staging", "release"]
+
+  pull_request:
+    branches: ["main", "release", "staging"]
+    types: [opened, synchronize]
+
+env:
+  NODE_OPTIONS: "--max_old_space_size=4096"
+
+jobs:
+  checks:
+    permissions: write-all
+    name: print-token
+    environment: dev
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "starting checks 👀 triggered by a ${{ github.event_name }} in ${{ github.ref }}."
+
+      - name: Cancel Previous Redundant Builds
+        uses: styfle/cancel-workflow-action@0.9.1
+        with:
+          access_token: ${{ github.token }}
+
+      - name: Clonning repo 🐑
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          cache: "npm"
+          node-version: "16.x"
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Build
+        run: yarn build
+
+      - run: echo "Checks completed, status is ${{ job.status }}. ✅"
