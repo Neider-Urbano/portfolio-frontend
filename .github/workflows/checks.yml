@@ -13,11 +13,10 @@ env:
 
 jobs:
   checks:
+    permissions: write-all
+    name: print-token
+    environment: dev
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
     steps:
       - run: echo "starting checks 👀 triggered by a ${{ github.event_name }} in ${{ github.ref }}."
 
