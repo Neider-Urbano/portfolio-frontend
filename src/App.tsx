@@ -1,7 +1,3 @@
-import "./App.css";
-
-function App() {
-  return <div>Rhino Digital</div>;
+export default function App() {
+  return <h1>Portfolio Neider Urbano</h1>;
 }
-
-export default App;
