@@ -2,9 +2,9 @@ build/*
 public/*
 node_modules
 graphql
-coverage/*
 cypress/*
 .eslintrc.cjs
 vite.config.ts
 cypress.config.ts
-scripts/*
+tailwind.config.js
+postcss.config.js

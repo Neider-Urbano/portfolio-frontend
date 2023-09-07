@@ -1,8 +1,8 @@
 /* eslint-env node */
 
 module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
+  settings: { react: { version: "detect" } },
+  env: { browser: true, es2020: true, jest: true },
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
