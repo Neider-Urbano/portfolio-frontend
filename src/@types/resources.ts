@@ -1,6 +1,6 @@
-import en from "/translations/en/translation.json?url";
-import es from "/translations/es/translation.json?url";
-import pt from "/translations/pt/translation.json?url";
+import en from "../assets/translations/en/translation.json";
+import es from "../assets/translations/es/translation.json";
+import pt from "../assets/translations/pt/translation.json";
 
 const resources = {
   en: {
