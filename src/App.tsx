@@ -5,7 +5,9 @@ const App: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <p>{t("hello")}</p>
+      <div className="bg-orange-950">
+        <p>{t("hello")}</p>
+      </div>
       <SwitcherDarkMode />
       <SelectLenguage />
     </div>
