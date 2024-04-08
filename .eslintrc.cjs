@@ -1,9 +1,10 @@
 /* eslint-env node */
 
 module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
+  settings: { react: { version: "detect" } },
+  env: { browser: true, es2020: true, jest: true },
   extends: [
+    "airbnb-typescript",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -17,7 +18,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
-    project: true,
+    project: ["./tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
   plugins: ["react-refresh", "import", "@typescript-eslint", "jest"],
@@ -63,5 +64,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-floating-promises": "off",
   },
 };
