@@ -59,7 +59,7 @@ const SendMessageForms = () => {
 
   return (
     <div className="flex flex-col gap-5 mt-28">
-      <h1 className="font-medium text-[13pt] text-[#111]">
+      <h1 className="font-medium text-[13pt] text-[#111] dark:text-[#ffff]">
         {t("Send me a message")}
       </h1>
       <div className="flex gap-5 flex-col lg:flex-row">

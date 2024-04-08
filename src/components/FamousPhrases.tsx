@@ -21,7 +21,7 @@ const FamousPhrases = () => {
   return (
     <div>
       <div className="flex flex-col items-center">
-        <Card className="w-full" shadow="sm">
+        <Card className="w-full bg-[#F5F5F5] dark:bg-[#282828]" shadow="sm">
           <CardHeader className="flex gap-3">
             <div className="w-[40px] h-[40px] rounded-md overflow-hidden">
               <img

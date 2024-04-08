@@ -8,7 +8,10 @@ const AboutButton = () => {
 
   return (
     <Link to={NamesRute.ABOUT}>
-      <Button color="default" className="hover:bg-[#18191B]">
+      <Button
+        color="default"
+        className="hover:bg-[#18191B] dark:bg-[#4C4C4C] dark:hover:bg-[#4444]"
+      >
         {t("About")}
       </Button>
     </Link>

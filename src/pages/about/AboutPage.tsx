@@ -18,16 +18,21 @@ const AboutPage: React.FC = () => {
       <div className="flex gap-14 flex-col lg:flex-row">
         <div>
           <h1 className="font-bold text-2xl">Neider urbano</h1>
-          <h1 className="font-bold text-2xl text-[#666666]">
+          <h1 className="font-bold text-2xl text-[#666666] dark:text-[#a0a0a0]">
             {t("Full Stack Developer")}
           </h1>
-          <p className="mt-14 text-[13pt]">{t("Profile")}</p>
+          <p className="mt-14 text-[13pt] dark:text-[#a3a3a3]">
+            {t("Profile")}
+          </p>
 
           <div className="flex flex-wrap gap-4 items-center mt-7">
             <AboutButton />
 
             <a href="./cv-neider-urbano-es.pdf" download>
-              <Button className="text-[#111]" variant="bordered">
+              <Button
+                className="text-[#111] dark:text-[#fff]"
+                variant="bordered"
+              >
                 <FaDownload />
                 {t("Dowloand")} CV
               </Button>

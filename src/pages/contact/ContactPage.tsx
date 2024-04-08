@@ -14,10 +14,10 @@ const ContactPage: React.FC = () => {
       <HeaderTitle title="Contact" description="Get in touch for inquiries" />
 
       <div>
-        <hr />
+        <hr className="dark:border-[#323232]" />
 
         <div className="mt-20">
-          <div className="flex text-[#111111] mb-7 flex-col gap-5 lg:flex-row lg:gap-0">
+          <div className="flex text-[#111111] mb-7 flex-col gap-5 lg:flex-row lg:gap-0 dark:text-[#fff]">
             <div className="lg:w-[50%]">
               <p>jjuly8julianur@gmail.com</p>
               <p>E-mail</p>

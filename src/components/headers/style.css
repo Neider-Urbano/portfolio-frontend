@@ -9,9 +9,21 @@
   background: #d9dadc;
 }
 
+.dark
+  .container-menu-options
+  .data-\[active\=true\]\:font-semibold[data-active="true"],
+.dark .isActivePhone {
+  background: #444444;
+}
+
 .container-menu-options li:hover,
 .container-menu-desplegable > li:hover {
   background: #e4e4e5;
+}
+
+.dark .container-menu-options li:hover,
+.dark .container-menu-desplegable > li:hover {
+  background: #363636;
 }
 
 .container-menu-options a,
@@ -20,6 +32,11 @@
   display: flex;
   align-items: center;
   font-size: 12pt;
+}
+
+.dark .container-menu-options a,
+.dark .container-menu-desplegable > li a {
+  color: #ffff;
 }
 
 .container-menu-options a svg,
@@ -41,14 +58,29 @@
   background: #e4e4e5;
 }
 
+.dark .container-redes-sociales li:hover,
+.dark .container-redes-sociales-desplegable li:hover {
+  background: #363636;
+}
+
 .container-redes-sociales li a,
 .container-redes-sociales-desplegable li a {
   color: #999999;
 }
 
+.dark .container-redes-sociales li a,
+.dark .container-redes-sociales-desplegable li a {
+  color: #ffff;
+}
+
 .container-redes-sociales li a:hover,
 .container-redes-sociales-desplegable li a:hover {
   color: #111111;
+}
+
+.dark .container-redes-sociales li a:hover,
+.dark .container-redes-sociales-desplegable li a:hover {
+  color: #ffff;
 }
 
 .container-config {
@@ -63,6 +95,10 @@
   padding-top: 30px;
   border-top: #dedfe1 2.5px solid;
   gap: 30px;
+}
+
+.dark .container-redes-sociales-desplegable {
+  border-top: #222222 2.5px solid;
 }
 
 .container-menu-desplegable > li {

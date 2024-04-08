@@ -11,11 +11,13 @@ const TableEducation = () => {
         {dataEducations.map((experience, index) => {
           return (
             <div key={experience.id} className="flex flex-col">
-              {index > 0 && <hr className="mb-7" />}
-              <div className="flex flex-col lg:flex-row">
+              {index > 0 && <hr className="mb-7 dark:border-[#272727]" />}
+              <div className="flex flex-col lg:flex-row dark:text-[#a3a3a3]">
                 <p className="lg:w-[350px]">{experience.dateFinish}</p>
                 <div className="mt-5  w-full lg:mt-0">
-                  <h1 className="font-medium">{experience.school}</h1>
+                  <h1 className="font-medium dark:text-[#ffff]">
+                    {experience.school}
+                  </h1>
                   <h2>{t(experience.course)}</h2>
                   <p className="mt-4">{t(experience.description)}</p>
                 </div>
