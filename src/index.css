@@ -3,12 +3,10 @@
 @tailwind utilities;
 
 .container-routes {
-  background: #eee;
   padding: 10px;
 }
 
 .container-routes > div {
-  background: #fff;
   border-radius: 10px;
   padding: 40px;
   box-shadow:

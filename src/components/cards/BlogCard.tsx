@@ -35,7 +35,7 @@ const BlogCard: React.FC<BlogCardProps> = ({ blog }) => {
           <p className="text-black text-sm">{blog.description}</p>
         </div>
         <Button
-          className="bg-[#111] text-sm  text-[#eee]"
+          className="bg-[#fff]  text-sm  dark:bg-[#111] dark:text-[#eee]"
           radius="full"
           size="sm"
         >

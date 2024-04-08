@@ -12,7 +12,7 @@ const TableTools = () => {
           return (
             <div
               key={tool.id}
-              className="flex gap-2 items-center text-lg bg-[#EFEFF0] px-7 py-2"
+              className="flex gap-2 items-center text-lg bg-[#EFEFF0] px-7 py-2 dark:bg-[#282828]"
             >
               <tool.icon />
               <p>{tool.skill}</p>

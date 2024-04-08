@@ -12,7 +12,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const { t } = useTranslation();
 
   return (
-    <Card className="p-2 bg-[#F5F5F5]" shadow="none">
+    <Card className="p-2 bg-[#F5F5F5] dark:bg-[#282828]" shadow="none">
       <CardHeader>
         <Image
           alt="Card background"
@@ -22,14 +22,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
       </CardHeader>
       <CardBody className="overflow-visible py-2">
-        <h4 className="font-bold text-large">{project.name}</h4>
+        <h4 className="font-medium text-large">{project.name}</h4>
         <a href={project.link} target="_blank" rel="noreferrer">
-          <small className="flex text-default-500 gap-1 items-center">
+          <small className="flex text-default-500 gap-1 items-center hover:font-semibold">
             <FaEye />
             Git Hub
           </small>
         </a>
-        <p className="pt-2 text-tiny font-bold w-[250px] ">
+        <p className="pt-2 text-sm font-normal w-[250px] ">
           {t(project.description)}
         </p>
       </CardBody>

@@ -68,7 +68,7 @@ export const HeaderMain = () => {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      className="class-header bg-[#EEEEEE]  sm:w-[100px] md:w-[250px]"
+      className="class-header bg-[#EEEEEE] dark:bg-[#141414]  sm:w-[100px] md:w-[250px]"
     >
       <NavbarContent className="grow">
         <NavbarMenuToggle
@@ -82,10 +82,10 @@ export const HeaderMain = () => {
             className="h-[45px] w-[45px] rounded-md sm:h-[60px] sm:w-[60px]"
           />
           <div className="hidden md:text-center">
-            <p className="text-[11pt] text-[#111111] font-medium md:text-[12pt]">
+            <p className="text-[11pt] text-[#111111] font-medium md:text-[12pt] dark:text-[#ffff]">
               Neider Urbano
             </p>
-            <p className="text-[10.5pt] text-[#666666] font-medium md:text-[11pt]">
+            <p className="text-[10.5pt] text-[#666666] font-medium md:text-[11pt] dark:text-[#aeaeae]">
               {t("Full Stack Developer")}
             </p>
           </div>
@@ -105,7 +105,7 @@ export const HeaderMain = () => {
 
       <HeaderMainItemConfig />
 
-      <NavbarMenu className="container-menu-desplegable bg-[#EEEEEE] border-t-[#DEDFE1] border-2 pt-[50px]">
+      <NavbarMenu className="container-menu-desplegable bg-[#EEEEEE] border-2 border-t-[#DEDFE1] border-r-0 border-l-0 border-b-0 pt-[50px] dark:bg-[#141414] dark:border-t-[#222222] ">
         {menuItems.map((item, index) => (
           <NavbarMenuItem
             key={item}
@@ -119,7 +119,7 @@ export const HeaderMain = () => {
           </NavbarMenuItem>
         ))}
 
-        <NavbarContent className="container-redes-sociales-desplegable">
+        <NavbarContent className="container-redes-sociales-desplegable ">
           <NavBarItemsNetworkSocial />
         </NavbarContent>
       </NavbarMenu>

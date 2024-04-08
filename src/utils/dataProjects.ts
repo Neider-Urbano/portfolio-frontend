@@ -13,7 +13,7 @@ export const projectsData: Projects = [
     id: 2,
     name: "Personal Portfolio",
     description: "Web project where you can find all the information about me",
-    img: "https://i.ibb.co/ZV35fpH/portafolio.png",
+    img: "https://raw.githubusercontent.com/Neider-Urbano/portfolio-frontend/main/public/evidence_portfolio.png",
     link: "https://github.com/Neider-Urbano/portfolio-frontend",
   },
   {

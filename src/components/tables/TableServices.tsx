@@ -12,7 +12,7 @@ const TableServices = () => {
           return (
             <div
               key={service.id}
-              className="flex gap-2 items-center text-lg bg-[#EFEFF0] px-7 py-2"
+              className="flex gap-2 items-center text-lg bg-[#EFEFF0] px-7 py-2 dark:bg-[#282828]"
             >
               <p>{t(service.name)}</p>
             </div>

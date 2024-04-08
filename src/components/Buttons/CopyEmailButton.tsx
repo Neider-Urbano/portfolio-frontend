@@ -8,7 +8,7 @@ const CopyEmailButton = () => {
 
   return (
     <CopyToClipboard text="jjuly8julianur@gmail.com">
-      <Button className="text-[#111]" variant="bordered">
+      <Button className="text-[#111] dark:text-[#ffff]" variant="bordered">
         <FaRegCopy />
         {t("Copy email")}
       </Button>
