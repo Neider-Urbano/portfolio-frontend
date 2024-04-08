@@ -1,15 +1,16 @@
-import SelectLenguage from "./components/Selects/SelectLenguage";
-import SwitcherDarkMode from "./components/Switchers/SwitcherDarkMode";
-import { useTranslation } from "react-i18next";
+import { HeaderMain } from "./components/headers/HeaderMain";
+import Router from "./Router";
+
 const App: React.FC = () => {
-  const { t } = useTranslation();
   return (
-    <div>
-      <div className="bg-orange-950">
-        <p>{t("hello")}</p>
+    <div className="container-main-app ">
+      <HeaderMain />
+
+      <div className="container-routes">
+        <div>
+          <Router />
+        </div>
       </div>
-      <SwitcherDarkMode />
-      <SelectLenguage />
     </div>
   );
 };

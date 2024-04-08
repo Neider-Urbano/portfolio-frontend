@@ -2,7 +2,7 @@ import React from "react";
 import { Select, SelectItem, Avatar } from "@nextui-org/react";
 import { useTranslation } from "react-i18next";
 import { Language, Languages } from "../../locales/Languages";
-
+import "./style.css";
 interface SelectItemLngProps {
   language: Language;
 }
@@ -12,8 +12,7 @@ const SelectItemLng: React.FC<SelectItemLngProps> = ({ language }) => {
     <div className="flex gap-2 items-center">
       <Avatar
         alt={language.label}
-        className="flex-shrink-0"
-        size="sm"
+        className="flex-shrink-0 w-[25px] h-[25px]"
         src={language.avatar}
       />
       <div className="flex flex-col">
@@ -37,19 +36,17 @@ const SelectLenguage: React.FC = () => {
       }}
       aria-label="select-language"
       classNames={{
-        base: "max-w-xs",
-        trigger: "h-12",
+        trigger: "h-10",
       }}
       renderValue={(items) => {
         return items.map((item) => (
-          <div key={item.data?.value} className="flex items-center gap-2">
+          <div key={item.data?.value} className="flex items-center gap-2 ">
             <Avatar
               alt={item.data?.label}
-              className="flex-shrink-0"
-              size="sm"
+              className="flex-shrink-0 w-[25px] h-[25px]"
               src={item.data?.avatar}
             />
-            <div className="flex flex-col">
+            <div className="text-lenguage">
               <span>{item.data?.label}</span>
             </div>
           </div>

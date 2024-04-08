@@ -1,6 +1,6 @@
 export type LanguageValue = "es" | "en" | "pt";
 
-export type LanguageLabel = "Español" | "Ingles" | "Portugal";
+export type LanguageLabel = "Es" | "En" | "Pt";
 
 export type LanguageStatus = "active" | "paused";
 
@@ -13,19 +13,19 @@ export type Language = {
 
 export const Languages: Array<Language> = [
   {
-    label: "Español",
+    label: "Es",
     value: "es",
     status: "active",
     avatar: "https://flagcdn.com/es.svg",
   },
   {
-    label: "Ingles",
+    label: "En",
     value: "en",
     status: "paused",
     avatar: "https://flagcdn.com/us.svg",
   },
   {
-    label: "Portugal",
+    label: "Pt",
     value: "pt",
     status: "active",
     avatar: "https://flagcdn.com/pt.svg",

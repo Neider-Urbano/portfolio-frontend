@@ -1,3 +1,56 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container-routes {
+  background: #eee;
+  padding: 10px;
+}
+
+.container-routes > div {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 640px) {
+  .container-main-app {
+    display: flex;
+  }
+  .container-routes {
+    width: 100%;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-routes {
+    margin-left: 290px;
+  }
+
+  .container-routes > div {
+    padding: 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .container-routes {
+    margin-left: 350px;
+  }
+
+  .container-routes > div {
+    padding: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-routes > div {
+    padding: 100px;
+  }
+}

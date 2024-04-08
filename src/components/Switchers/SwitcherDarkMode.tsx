@@ -9,8 +9,9 @@ const SwitcherDarkMode: React.FC = () => {
       defaultSelected={isSelected}
       isSelected={isSelected}
       onValueChange={setTheme}
-      size="lg"
+      size="md"
       color="success"
+      className="md:mt-2"
       startContent={
         <svg
           aria-hidden="true"
