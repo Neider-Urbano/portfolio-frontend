@@ -1,0 +1,181 @@
+.container-menu-options {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.container-menu-options
+  .data-\[active\=true\]\:font-semibold[data-active="true"],
+.isActivePhone {
+  background: #d9dadc;
+}
+
+.container-menu-options li:hover,
+.container-menu-desplegable > li:hover {
+  background: #e4e4e5;
+}
+
+.container-menu-options a,
+.container-menu-desplegable > li a {
+  color: #666666;
+  display: flex;
+  align-items: center;
+  font-size: 12pt;
+}
+
+.container-menu-options a svg,
+.container-menu-desplegable > li a svg {
+  margin-right: 10px;
+}
+
+.container-redes-sociales li,
+.container-redes-sociales-desplegable li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  padding: 7px;
+}
+
+.container-redes-sociales li:hover,
+.container-redes-sociales-desplegable li:hover {
+  background: #e4e4e5;
+}
+
+.container-redes-sociales li a,
+.container-redes-sociales-desplegable li a {
+  color: #999999;
+}
+
+.container-redes-sociales li a:hover,
+.container-redes-sociales-desplegable li a:hover {
+  color: #111111;
+}
+
+.container-config {
+  justify-content: end !important;
+  gap: 0;
+}
+
+.container-redes-sociales-desplegable {
+  justify-content: center !important;
+  align-items: flex-start !important;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: #dedfe1 2.5px solid;
+  gap: 30px;
+}
+
+.container-menu-desplegable > li {
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .container-logo-neider div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px 0px 0px 15px;
+  }
+
+  .class-header {
+    align-items: start;
+  }
+}
+
+@media (min-width: 640px) {
+  .class-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+  }
+
+  .class-header header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 50px 0px;
+  }
+
+  .class-header header ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .container-redes-sociales {
+    gap: 3px;
+  }
+
+  .data-\[justify\=start\]\:flex-grow[data-justify="start"] {
+    flex-grow: 0;
+  }
+
+  .data-\[justify\=end\]\:justify-end[data-justify="end"] {
+    justify-content: flex-start;
+  }
+
+  .container-config {
+    justify-content: flex-end !important;
+  }
+
+  .container-logo-neider {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-logo-neider div {
+    display: none;
+  }
+
+  .container-menu-options li {
+    border-radius: 10px;
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .class-header {
+    width: 290px;
+  }
+
+  .container-logo-neider div {
+    display: block;
+    margin-top: 20px;
+  }
+  .container-redes-sociales {
+    flex-direction: row !important;
+    gap: 10px;
+  }
+
+  .container-menu-options li {
+    border-radius: 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .container-menu-options li > a {
+    padding: 8px 15px;
+  }
+
+  .container-config {
+    width: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .class-header {
+    width: 350px;
+  }
+}
