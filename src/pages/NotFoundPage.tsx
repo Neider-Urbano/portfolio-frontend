@@ -1,7 +1,10 @@
 import React from "react";
 import "./notFoundPage.css";
+import { useTheme } from "../providers/theme/useTheme";
 
 export const NotFoundPage: React.FC = () => {
+  const { isSelected } = useTheme();
+
   return (
     <div className="container-not-found">
       <svg
@@ -20,7 +23,7 @@ export const NotFoundPage: React.FC = () => {
         </defs>
         <g fill="none" fillRule="evenodd">
           <path
-            fill="#FFF"
+            fill={`${isSelected ? "#1a1a1a" : "#FFF"}`}
             d="M0 0H1366V800H0z"
             transform="translate(-448 -157)"
           />
