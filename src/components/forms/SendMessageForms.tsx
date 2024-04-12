@@ -6,10 +6,15 @@ import validator from "validator";
 import { Bounce, toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+import { config } from "../../config";
+import { useTheme } from "../../providers/theme/useTheme";
 
 const SendMessageForms = () => {
   const { t } = useTranslation();
   const [dataMessage, setDataMessage] = useState<SendMessage>();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const { isSelected } = useTheme();
 
   const handleInputs = (e: React.ChangeEvent<HTMLInputElement>) => {
     const name = e.target.name;
@@ -36,25 +41,46 @@ const SendMessageForms = () => {
   }, [dataMessage]);
 
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    setIsLoading(true);
     e.preventDefault();
+
     if (!isInvalidName && !isInvalidEmail && !isInvalidTextArea) {
-      toast.success(t("Message sent successfully"), {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-        transition: Bounce,
-      });
-      setDataMessage({
-        email: "",
-        message: "",
-        name: "",
-      });
+      axios
+        .post(config.API_URL + "message/send", dataMessage)
+        .then(() => {
+          toast.success(t("Message sent successfully"), {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: isSelected ? "dark" : "light",
+            transition: Bounce,
+          });
+
+          setDataMessage({
+            email: "",
+            message: "",
+            name: "",
+          });
+        })
+        .catch(() => {
+          toast.error(t("Error sending email"), {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: isSelected ? "dark" : "light",
+            transition: Bounce,
+          });
+        });
     }
+    setIsLoading(false);
   };
 
   return (
@@ -104,7 +130,9 @@ const SendMessageForms = () => {
         color="success"
         className="font-bold"
         onClick={(e) => handleSubmit(e)}
-        isDisabled={isInvalidName || isInvalidEmail || isInvalidTextArea}
+        isDisabled={
+          isInvalidName || isInvalidEmail || isInvalidTextArea || isLoading
+        }
       >
         {t("Send")}
       </Button>
