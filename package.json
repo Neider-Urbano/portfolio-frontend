@@ -29,8 +29,10 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.1.7",
+    "@types/axios": "^0.14.0",
     "@types/react-copy-to-clipboard": "^5.0.7",
     "@types/validator": "^13.11.9",
+    "axios": "^1.6.8",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jest": "^27.2.3",
     "eslint-plugin-react": "^7.33.0",
