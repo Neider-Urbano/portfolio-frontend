@@ -46,7 +46,7 @@ const SendMessageForms = () => {
 
     if (!isInvalidName && !isInvalidEmail && !isInvalidTextArea) {
       axios
-        .post(config.API_URL + "/message/send", dataMessage)
+        .post(config.API_URL + "message/send", dataMessage)
         .then(() => {
           toast.success(t("Message sent successfully"), {
             position: "top-right",
