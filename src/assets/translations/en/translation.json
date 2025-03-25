@@ -46,6 +46,7 @@
   "Actually": "Actually",
   "January": "January",
   "Junior Software Developer": "Junior Software Developer",
+  "Software Developer": "Software Developer",
   "FreeLancer in Computer Science": "FreeLancer in Computer Science",
   "Develop and maintain complete web applications, including frontend, backend and database.": "Develop and maintain complete web applications, including frontend, backend and database.",
   "Teaching live online classes to children and adolescents in technological training.": "Teaching live online classes to children and adolescents in technological training.",
@@ -55,5 +56,7 @@
   "Countries is a web application that allows us to see the soccer teams of a country, select our favorite teams and create a player on a team": "Countries is a web application that allows us to see the soccer teams of a country, select our favorite teams and create a player on a team.",
   "It is a web application that allows us to manage (create, delete, update, view) musical instruments. We can also register to have our own account and be able to buy completely online": "It is a web application that allows us to manage (create, delete, update, view) musical instruments. We can also register to have our own account and be able to buy completely online.",
   "It is a web application that allows us to manage (create, delete, update, view) dog breeds. It also allows us to make different search filters": "It is a web application that allows us to manage (create, delete, update, view) dog breeds. It also allows us to make different search filters.",
-  "Message sent successfully": "Message sent successfully"
+  "Message sent successfully": "Message sent successfully",
+  "Develop, implement, and maintain web applications, managing both the frontend and backend.": "Develop, implement, and maintain web applications, managing both the frontend and backend.",
+  "July": "July"
 }
