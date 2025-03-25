@@ -46,6 +46,7 @@
   "Actually": "Na verdade",
   "January": "Janeiro",
   "Junior Software Developer": "Desenvolvedor de Software Júnior",
+  "Software Developer": "Desenvolvedor de Software",
   "FreeLancer in Computer Science": "FreeLancer em Ciência da Computação",
   "Develop and maintain complete web applications, including frontend, backend and database.": "Desenvolva e mantenha aplicações web completas, incluindo frontend, backend e banco de dados.",
   "Teaching live online classes to children and adolescents in technological training.": "Ministrar aulas online ao vivo para crianças e adolescentes em formação tecnológica.",
@@ -55,5 +56,7 @@
   "Countries is a web application that allows us to see the soccer teams of a country, select our favorite teams and create a player on a team": "Países é uma aplicação web que nos permite ver os times de futebol de um país, selecionar nossos times favoritos e criar um jogador em um time.",
   "It is a web application that allows us to manage (create, delete, update, view) musical instruments. We can also register to have our own account and be able to buy completely online": "É uma aplicação web que nos permite gerenciar (criar, excluir, atualizar, visualizar) instrumentos musicais. Também podemos nos registrar para ter nossa própria conta e poder comprar totalmente online.",
   "It is a web application that allows us to manage (create, delete, update, view) dog breeds. It also allows us to make different search filters": "É uma aplicação web que nos permite gerir (criar, eliminar, atualizar, visualizar) raças de cães. Também nos permite fazer diferentes filtros de pesquisa.",
-  "Message sent successfully": "Mensagem enviada corretamente"
+  "Message sent successfully": "Mensagem enviada corretamente",
+  "Develop, implement, and maintain web applications, managing both the frontend and backend.": "Desenvolver, implementar e manter aplicativos web, gerenciando tanto o frontend quanto o backend.",
+  "July": "Julho"
 }

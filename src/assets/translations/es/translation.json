@@ -45,7 +45,8 @@
   "August": "Agosto",
   "Actually": "Actualmente",
   "January": "Enero",
-  "Junior Software Developer": "Desarrollador de Software Junio",
+  "Junior Software Developer": "Desarrollador de Software Junior",
+  "Junior Software": "Desarrollador de Software",
   "FreeLancer in Computer Science": "FreeLancer en Ciencias de la Computación",
   "Develop and maintain complete web applications, including frontend, backend and database.": "Desarrollar y mantener aplicaciones web completas, incluyendo el frontend, backend y base de datos.",
   "Teaching live online classes to children and adolescents in technological training.": "Dictado de clases online en vivo a niños y adolescentes en formaciones tecnológicas.",
@@ -55,5 +56,7 @@
   "Countries is a web application that allows us to see the soccer teams of a country, select our favorite teams and create a player on a team": "Countries is a web application that allows us to see the soccer teams of a country, select our favorite teams and create a player on a team.",
   "It is a web application that allows us to manage (create, delete, update, view) musical instruments. We can also register to have our own account and be able to buy completely online": "Es una aplicación web que nos permite gestionar (crear, eliminar, actualizar, visualizar) instrumentos musicales. También podemos registrarnos para tener nuestra propia cuenta y poder comprar completamente online.",
   "It is a web application that allows us to manage (create, delete, update, view) dog breeds. It also allows us to make different search filters": "Es una aplicación web que nos permite gestionar (crear, eliminar, actualizar, visualizar) razas de perros. También nos permite realizar diferentes filtros de búsqueda.",
-  "Message sent successfully": "Mensaje enviado correctamente"
+  "Message sent successfully": "Mensaje enviado correctamente",
+  "Develop, implement, and maintain web applications, managing both the frontend and backend.": "Desarrollar, implementar y mantener aplicaciones web, administrando tanto el frontend como el backend.",
+  "July": "Julio"
 }
